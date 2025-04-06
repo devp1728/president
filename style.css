@@ -1,13 +1,36 @@
 body {
 
     font-family: "Macondo Swash Caps", cursive;
-    font-weight: 400;
-    font-style: normal;
+    font-weight: 800;
+    font-style: large;
     background-color: #383232;
     color: #ffffff;
+    
   }
-  
-
+section {
+    margin-top: 50px;
+    margin-bottom: 50px; 
+    padding: 20px;
+    border-radius: 8px; 
+}
+.timeline {
+  list-style-type: none;
+  flex: 1; /* Timeline will take up remaining space */
+  margin: 0;
+}
+.timeline-image img { 
+  border-radius: 12px;
+}
+.timeline-container {
+  display: flex;
+  justify-content: space-between; /* Ensures there's space between the items */
+  align-items: flex-start; /* Align timeline and image at the top */
+  gap: 20px; /* Space between timeline and image */
+  flex-wrap: wrap; /* Ensures wrapping if screen size is too small */
+}
+  .navbar-brand, .nav-link {
+    font-size: 3.0rem;
+  }
   footer {
     background-color: #343a40;
   }
@@ -41,4 +64,38 @@ body {
 nav {
   background-color: #383232;
   color: white;
+}
+.timeline-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.timeline {
+  flex: 1 1 60%;
+}
+
+.timeline-image {
+  flex: 1 1 35%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.timeline-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+/* Center the quiz */
+#quiz {
+  text-align: center;
+}
+.timeline-image img {
+  max-width: 70%;
+  height: 500px; 
+  object-fit: cover;
+  border-radius: 8px;
 }
